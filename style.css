@@ -1,6 +1,96 @@
-.buttons button{
-    font-size: 40px;
-    font-weight: 600;
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+h1, footer {
+    display: flex;
+    justify-content: center;
+    background-color: #778899;
+    margin: 0; 
+}
+
+footer {
+    margin-top: auto;
+    padding: 10px;
+}
+
+h1 {
     padding: 20px;
+}
+
+.content {
+    background-image: url("./img/background.jpg");
+    background-size: cover;
+    flex: 1;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 30px 150px 0 0;
+}
+
+.buttons button{
+    font-size: 20px;
+    font-weight: 600;
+    width: 130px;
+    height: 130px;
+    text-align: center;
     border-radius: 50%;
+    background-color: #ADD8E6;
+    cursor: pointer;
+    border-width: 3px;
+    
+}
+
+.scores {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#scores-comp {
+    color: white;
+    padding-left: 30px;
+}
+
+#scores-player {
+    padding-right: 30px;
+}
+
+.container {
+    display: flex;
+}
+
+.text {
+    display: flex;
+    margin: auto;
+    margin-right: 300px;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 400;
+    width: 300px;
+    height: 200px;
+    align-items: center;
+    opacity: 60%;
+}
+
+#text-comp {
+    display: flex;
+    margin-right: auto;
+    padding: 20px;
+    font-family: 'Courier New';
+}
+
+#text-player {
+    display: flex;
+    margin-left: auto;
+    padding: 20px;
+    font-family: 'Courier New';
 }
